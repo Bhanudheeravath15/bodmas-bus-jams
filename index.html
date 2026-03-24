@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>BODMAS Bus Jam</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>BODMAS Bus Jam 🚍</h1>
-<p>Click the operators in the correct BODMAS order</p>
+<p>Enter your own expression and solve using BODMAS</p>
 
-<div id="expression">
-  <span class="number">8</span>
-  <button class="operator" data-op="+" data-priority="3">+</button>
-  <span class="number">2</span>
-  <button class="operator" data-op="×" data-priority="1">×</button>
-  <span class="number">5</span>
+<!-- USER INPUT -->
+<div>
+  <input type="number" id="n1" placeholder="Number">
+  <select id="op1">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">×</option>
+    <option value="/">÷</option>
+  </select>
+
+  <input type="number" id="n2" placeholder="Number">
+  <select id="op2">
+    <option value="+">+</option>
+    <option value="-">-</option>
+    <option value="*">×</option>
+    <option value="/">÷</option>
+  </select>
+
+  <input type="number" id="n3" placeholder="Number">
 </div>
 
-<p id="message"></p>
+<br>
+<button onclick="generateExpression()">Generate Expression</button>
 
+<!-- GAME AREA -->
+<div id="expression"></div>
+
+<p id="message"></p>
 <button onclick="resetGame()">Reset</button>
 
 <script src="script.js"></script>
 </body>
 </html>
-``
