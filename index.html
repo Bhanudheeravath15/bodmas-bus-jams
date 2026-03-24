@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BODMAS Bus Jam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<h1>BODMAS Bus Jam 🚍</h1>
+<p>Click the operators in the correct BODMAS order</p>
+
+<div id="expression">
+  <span class="number">8</span>
+  <button class="operator" data-op="+" data-priority="3">+</button>
+  <span class="number">2</span>
+  <button class="operator" data-op="×" data-priority="1">×</button>
+  <span class="number">5</span>
+</div>
+
+<p id="message"></p>
+
+<button onclick="resetGame()">Reset</button>
+
+<script src="script.js"></script>
+</body>
+</html>
+``

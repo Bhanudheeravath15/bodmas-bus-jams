@@ -1,0 +1,36 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f6fb;
+}
+
+#expression {
+  margin-top: 30px;
+  font-size: 32px;
+}
+
+.operator {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffcc00;
+}
+
+.operator.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.operator.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 18px;
+}
+``
