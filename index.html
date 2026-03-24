@@ -2,44 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>BODMAS Bus Jam</title>
+  <title>BODMAS Bus Jam 🚍</title>
+
+  <!-- ✅ CSS LINK -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <h1>BODMAS Bus Jam 🚍</h1>
-<p>Enter your own expression and solve using BODMAS</p>
+<p class="subtitle">Enter numbers and operators, then solve using BODMAS order</p>
 
-<!-- USER INPUT -->
-<div>
-  <input type="number" id="n1" placeholder="Number">
+<div class="level-row">
+  <label>Level:</label>
+  <select id="level">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+</div>
+
+<div id="input-area">
+  <input type="number" id="n1" value="6">
+
   <select id="op1">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">×</option>
     <option value="/">÷</option>
+    <option value="^">O (²)</option>
   </select>
 
-  <input type="number" id="n2" placeholder="Number">
+  <input type="number" id="n2" value="2">
+
   <select id="op2">
     <option value="+">+</option>
     <option value="-">-</option>
     <option value="*">×</option>
     <option value="/">÷</option>
+    <option value="^">O (²)</option>
   </select>
 
-  <input type="number" id="n3" placeholder="Number">
+  <input type="number" id="n3" value="9">
 </div>
 
-<br>
-<button onclick="generateExpression()">Generate Expression</button>
+<button onclick="generate()">Generate Expression</button>
 
-<!-- GAME AREA -->
 <div id="expression"></div>
 
-<p id="message"></p>
+<p id="message">Click operators in correct BODMAS order</p>
+
+<p>⏱ Time: <span id="time">0</span> sec</p>
+<p>📊 Score: <span id="score">0</span></p>
+
+<div id="explanation"></div>
+
 <button onclick="resetGame()">Reset</button>
 
+<!-- ✅ JS LINK -->
 <script src="script.js"></script>
 </body>
 </html>

@@ -1,36 +1,54 @@
 body {
   font-family: Arial, sans-serif;
+  background: #f5f7fb;
   text-align: center;
-  background: #f4f6fb;
+  padding-top: 30px;
+  user-select: none;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+}
+
+#input-area {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 15px 0;
+}
+
+input, select {
+  padding: 6px;
+  font-size: 15px;
+}
+
+button {
+  padding: 6px 16px;
+  margin: 10px;
+  cursor: pointer;
 }
 
 #expression {
-  margin-top: 30px;
-  font-size: 32px;
+  margin: 20px 0;
+  font-size: 22px;
 }
 
 .operator {
-  padding: 10px 20px;
-  margin: 0 10px;
-  font-size: 24px;
-  cursor: pointer;
-  border-radius: 8px;
+  background: #ffcc00;
+  border-radius: 6px;
+  padding: 6px 12px;
   border: none;
-  background-color: #ffcc00;
+  cursor: pointer;
 }
 
 .operator.correct {
-  background-color: #4caf50;
+  background: #4caf50;
   color: white;
 }
 
 .operator.wrong {
-  background-color: #f44336;
+  background: #f44336;
   color: white;
 }
 
-#message {
-  margin-top: 20px;
-  font-size: 18px;
-}
-``
